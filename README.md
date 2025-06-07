@@ -5,7 +5,8 @@
 - Main.py can be ignored.
 - If ever needed, this repo can be downloaded and unzipped or git clone
 
-- Currently, wk01.py is for practical 02
-- wk04.py is for practical 04 
-- prac_05 is for practical prac 05 
-- Other weeks work is coming soon
+## Current legend / key:
+
+- wk02.py = week 2 exercises
+- wk05.py = week 5 exercises
+- And this pattern continues
