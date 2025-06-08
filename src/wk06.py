@@ -6,7 +6,7 @@ target = int(input("Enter number: "))
 print("Add odd number(s):")
 result = 0
 
-for i in range(1, target+1, 2):
+for i in range(1, target + 1, 2):
     print(f"\t{i}")
     result += i
 
@@ -40,11 +40,11 @@ while True:
 
 # Qsn 1a:
 
-num_list = [2,5,9,7,8]
+num_list = [2, 5, 9, 7, 8]
 sum_val = 0
 
 for val in num_list:
-    sum_val += val ** 2
+    sum_val += val**2
 
 print(f"Total of squares in the list is: {sum_val}")
 
@@ -53,31 +53,31 @@ print(f"Total of squares in the list is: {sum_val}")
 # Error prone code:
 # print('Number','  ','Square')
 # for num in [2,5,9,7,8]:
-    # squarenum = num * num
-    # total = total + (squarenum)
-    # print(num, squarenum,sep='\t\t')
+# squarenum = num * num
+# total = total + (squarenum)
+# print(num, squarenum,sep='\t\t')
 # print('Total of square in the list is',total)
 
 # Error is total isnt defined (line 57 and line 59)
 
-#Fixed code:
-print('Number','  ','Square')
+# Fixed code:
+print("Number", "  ", "Square")
 
-total = 0 # Only new line added
+total = 0  # Only new line added
 
-for num in [2,5,9,7,8]:
+for num in [2, 5, 9, 7, 8]:
     squarenum = num * num
     total = total + (squarenum)
-    print(num, squarenum,sep='\t\t')
-print('Total of square in the list is',total)
+    print(num, squarenum, sep="\t\t")
+print("Total of square in the list is", total)
 
 
 # Qsn 2:
 n = int(input("Enter a term of series: "))
 val_sum = 0
 
-if n >=2:
-    for i in range(1, n+1):
+if n >= 2:
+    for i in range(1, n + 1):
         temp = "5" * i
         val_sum += int(temp)
         print(f"{temp}", sep=" ")
@@ -86,13 +86,11 @@ else:
     print("You must have at least 2 sets of numbers")
 
 
-
 # Qsn 3:
 total_sum = 0
 student_count = int(input("Enter number of students: "))
 
 for i in range(student_count):
-    total_sum += float(input(f"Enter exam score for student {i+1}: ")) 
+    total_sum += float(input(f"Enter exam score for student {i + 1}: "))
 
 print(f"Average score = {total_sum / student_count:.2f}")
-

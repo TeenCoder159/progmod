@@ -7,7 +7,7 @@ else:
     operation = input("Enter operation: ")
     output = "Result is "
     if operation == "+":
-        output += str(num_2+num_1)
+        output += str(num_2 + num_1)
     elif operation == "-":
         output += str(num_1 - num_2)
     elif operation == "*" or operation == "x":
@@ -15,12 +15,11 @@ else:
     elif operation == "/":
         output += str(num_1 / num_2)
     elif operation == "**" or operation == "^":
-        output += str(num_1 ** num_2)
+        output += str(num_1**num_2)
     else:
         output = "Invalid input. Please enter a valid operation"
-
 
     print(output)
 
 
-# Alternatively, use an eval() function but we don't talk about that 
+# Alternatively, use an eval() function but we don't talk about that

@@ -2,7 +2,9 @@
 
 # Exercise 1:
 
-grade = input("Enter grade: ").lower() # Simplify checking to only check lowercase letters
+grade = input(
+    "Enter grade: "
+).lower()  # Simplify checking to only check lowercase letters
 if grade == "a":
     print("GPA is 4.0")
 elif grade == "b":
@@ -20,7 +22,7 @@ else:
 weight = int(input("Enter weight in kg: "))
 height = float(input("Enter height in m: "))
 
-bmi = weight / (height ** 2)
+bmi = weight / (height**2)
 
 # print("Your BMI is " + str(bmi))
 # print("Your BMI is", bmi)
@@ -32,7 +34,7 @@ if bmi >= 27.5:
     print("You are Obese")
 elif bmi >= 23:
     print("You are Overweight")
-elif bmi >=18.5:
+elif bmi >= 18.5:
     print("You are Normal")
 else:
     print("You are Underweight")
@@ -44,9 +46,9 @@ try:
 except:
     print("Invalid input detected, Exiting program")
 else:
-    min_weight = 18.5 * (height ** 2)
-    max_weight = 22.9 * (height ** 2)
-    
+    min_weight = 18.5 * (height**2)
+    max_weight = 22.9 * (height**2)
+
     print(f"Your ideal weight is between {min_weight:.2f} and {max_weight:.2f}")
     if weight >= min_weight and weight <= max_weight:
         print("Good Job, your weight is ideal!")
@@ -59,7 +61,6 @@ age = int(input("Enter your age: "))
 day = int(input("Enter day of the week (1-7): "))
 
 if 4 <= age <= 130:
-
     ticket_price = 9.0
     if day <= 5:
         if age < 16:
@@ -87,7 +88,7 @@ if hours > 40:
     pay = 40 * rate
     pay += (hours - 40) * (rate * 1.5)
 else:
-    pay = hours*rate
+    pay = hours * rate
 
 print(f"Please pay: ${pay:.2f}")
 
@@ -97,7 +98,7 @@ age = int(input("Enter your age: "))
 
 if age <= 6:
     print("Always follow your parents!")
-elif age <=20:
+elif age <= 20:
     print("Listen to your parents!")
 else:
     print("You're an adult now. Behave responsibly")
@@ -117,4 +118,3 @@ if 0 < day <= 7:
             print("Please pay $28")
 else:
     print("Invalid day")
-
